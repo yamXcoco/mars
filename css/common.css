@@ -1,0 +1,12 @@
+:root {
+  --primary: #222;
+  --accent: #fd7272;
+  --dark: #4b4b4b;
+  --mid: #808080;
+  --light: #e0e0e0;
+}
+.section {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
