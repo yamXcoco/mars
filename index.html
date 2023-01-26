@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- 슬릭슬라이드 -->
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
@@ -16,7 +17,13 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <!-- xeicon -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+    <!-- js -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
@@ -70,7 +77,7 @@
 
       <!-- pick -->
       <div class="section">
-        <div class="title">
+        <div class="title_box">
           <h3>금주의 Pick</h3>
           <p>구하지 들어 되려니와, 피가 피고, 품었기 이는 부패뿐이다.</p>
         </div>
@@ -78,7 +85,7 @@
           <div class="item">
             <img src="./images/pick.jpg" alt="" />
             <div class="profile">
-              <img src="./images/user.png" alt="" />
+              <img src="./images/profile.png" alt="" />
               <div class="detail">
                 <h5>Yelena G.</h5>
                 <p>Female / Photographer</p>
@@ -88,7 +95,7 @@
           <div class="item">
             <img src="./images/pick-1.jpg" alt="" />
             <div class="profile">
-              <img src="./images/user.png" alt="" />
+              <img src="./images/profile.png" alt="" />
               <div class="detail">
                 <h5>Yelena G.</h5>
                 <p>Female / Photographer</p>
@@ -98,7 +105,7 @@
           <div class="item">
             <img src="./images/pick-2.jpg" alt="" />
             <div class="profile">
-              <img src="./images/user.png" alt="" />
+              <img src="./images/profile.png" alt="" />
               <div class="detail">
                 <h5>Yelena G.</h5>
                 <p>Female / Photographer</p>
@@ -108,7 +115,7 @@
           <div class="item">
             <img src="./images/pick-3.jpg" alt="" />
             <div class="profile">
-              <img src="./images/user.png" alt="" />
+              <img src="./images/profile.png" alt="" />
               <div class="detail">
                 <h5>Yelena G.</h5>
                 <p>Female / Photographer</p>
@@ -118,7 +125,7 @@
           <div class="item">
             <img src="./images/pick-4.jpg" alt="" />
             <div class="profile">
-              <img src="./images/user.png" alt="" />
+              <img src="./images/profile.png" alt="" />
               <div class="detail">
                 <h5>Yelena G.</h5>
                 <p>Female / Photographer</p>
@@ -129,20 +136,145 @@
       </div>
 
       <!-- earth -->
-      <div class="section"></div>
+      <div class="section earth">
+        <div class="title_box">
+          <h3>우주에서 바라보는 지구</h3>
+          <p>있을 품에 같이, 용기가 청춘이 장식하는 인생을 철환하였는가?</p>
+          <span>전체보기<i class="xi-angle-right"></i></span>
+        </div>
+        <ul class="cards">
+          <li><img src="/images/earth_01.jpg" alt="" /></li>
+          <li><img src="/images/earth_02.jpg" alt="" /></li>
+          <li><img src="/images/earth_03.jpg" alt="" /></li>
+          <li><img src="/images/earth_04.jpg" alt="" /></li>
+        </ul>
+      </div>
 
       <!-- space -->
-      <div class="section"></div>
+      <div class="section space">
+        <div class="title_box">
+          <h3>우주! 어디까지 알고 있니?</h3>
+          <p>
+            인생에 사는가 끝에 방황하여도, 때까지 방황하였으며, 바로
+            이것이야말로 봄바람이다.
+          </p>
+        </div>
+        <ul class="cards">
+          <li>
+            <img src="/images/space_01.jpg" alt="" />
+            <h5>Jupiter</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="/images/space_02.jpg" alt="" />
+            <h5>alien</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="/images/space_03.jpg" alt="" />
+            <h5>Moon transform</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="/images/space_04.jpg" alt="" />
+            <h5>Alone in the space</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="/images/space_05.png" alt="" />
+            <h5>space Man</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="/images/space_06.png" alt="" />
+            <h5>star Light</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+        </ul>
+      </div>
 
       <!-- map -->
-      <div class="section"></div>
-      <div class="map"></div>
+      <div class="section">
+        <div class="title_box">
+          <h3>오시는 길</h3>
+          <p>우주로 가는 길은 당신과 아주 가까운 곳에 있습니다.</p>
+        </div>
+      </div>
+      <!-- <div class="map"> -->
+      <div
+        id="daumRoughmapContainer1674697202433"
+        class="root_daum_roughmap root_daum_roughmap_landing map"
+      ></div>
+      <!-- </div> -->
 
       <!-- insta -->
+      <div class="section insta">
+        <div class="title_box">
+          <h3><i class="xi-instagram"></i> Instagram</h3>
+          <span>daily life on Mars</span>
+        </div>
+        <ul class="cards">
+          <li><img src="/images/insta_01.png" alt="" /></li>
+          <li><img src="/images/insta_02.png" alt="" /></li>
+          <li><img src="/images/insta_03.png" alt="" /></li>
+          <li><img src="/images/insta_04.png" alt="" /></li>
+          <li><img src="/images/insta_05.png" alt="" /></li>
+          <li><img src="/images/insta_06.png" alt="" /></li>
+          <li><img src="/images/insta_07.png" alt="" /></li>
+          <li><img src="/images/insta_08.png" alt="" /></li>
+          <li><img src="/images/insta_09.png" alt="" /></li>
+          <li><img src="/images/insta_010.png" alt="" /></li>
+          <li><img src="/images/insta_011.png" alt="" /></li>
+          <li><img src="/images/insta_012.png" alt="" /></li>
+        </ul>
+      </div>
       <div class="section"></div>
 
       <!-- footer -->
-      <div class="footer"></div>
+      <div class="footer">
+        <div class="section">
+          <div class="bottom_header">
+            <div class="bottom_logo">
+              <img src="/images/footer_logo.png" alt="" />
+            </div>
+            <ul class="bottom_nav">
+              <li><a href="#x">서비스이용약관</a></li>
+              <li><a href="#x">개인정보 이용방침</a></li>
+              <li><a href="#x">우주공간 이용규칙</a></li>
+            </ul>
+            <div class="sns">
+              <i class="xi-instagram"></i>
+              <i class="xi-facebook"></i>
+              <i class="xi-youtube-play"></i>
+              <i class="xi-twitter"></i>
+            </div>
+          </div>
+          <p class="site_info">
+            마스프로젝트(주) 대표 : 일론 머스크<br />
+            사업자등록번호 : XRE-58-HU-78425-000 <br />
+            통신판매업신고 : 2020-화성-제2154호 <br />
+            이메일 : spacetour@google.com <br />
+            주소 : 서울특별시 영등포구 분화구옆 큰길 574 ( 화성동 E8 - A172F00 )
+            <br />
+            고객센터 AM 10:00 ~ PM 05:00 / 주말, 공휴일 제외
+          </p>
+          <p class="copyright">© 2123 Mars:Project Inc. All Rights Reserved</p>
+        </div>
+      </div>
     </div>
+    <!-- 지도 스크립트 -->
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+    <script charset="UTF-8">
+      new daum.roughmap.Lander({
+        timestamp: '1674697202433',
+        key: '2dimz',
+        mapWidth: '640',
+        mapHeight: '450',
+      }).render()
+    </script>
   </body>
 </html>
