@@ -7,7 +7,7 @@
     <title>생태환경:mars</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/member.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
 
     <!-- xeicon -->
     <link
@@ -15,7 +15,9 @@
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../js/fillter.js"></script>
   </head>
 
   <body>
@@ -45,27 +47,67 @@
         <h1>생태</h1>
       </div>
 
+      <!-- gallery_header -->
+      <div class="section gallery_header">
+        <ul class="category">
+          <li data-id="all"><a href="#x">전체</a></li>
+          <li data-id="cloud"><a href="#x">구름</a></li>
+          <li data-id="mountain"><a href="#x">산</a></li>
+          <li data-id="sea"><a href="#x">바다</a></li>
+          <li data-id="wind"><a href="#x">바람</a></li>
+        </ul>
+        <i class="xi-cog"></i>
+      </div>
+
       <!--member -->
-      <ul class="section member">
-        <li>
-          <img src="../images/people_01.png" alt="" />
-          <h5>홍길동</h5>
-          <p>총괄 책임자</p>
+      <ul class="section gallery">
+        <li data-item="mountain">
+          <img src="../images/gallery_01.jpg" alt="" />
+          <p>이제 추억과 하나에 봅니다</p>
         </li>
-        <li>
-          <img src="../images/people_03.png" alt="" />
-          <h5>장길산</h5>
-          <p>수석 엔지니어</p>
+        <li data-item="sea">
+          <img src="../images/gallery_02.jpg" alt="" />
+          <p>까닭입니다</p>
         </li>
-        <li>
-          <img src="../images/people_04.png" alt="" />
-          <h5>일지매</h5>
-          <p>프로젝트 매니저</p>
+        <li data-item="cloud">
+          <img src="../images/gallery_03.jpg" alt="" />
+          <p>리고 있습니다</p>
         </li>
-        <li>
-          <img src="../images/people_02.png" alt="" />
-          <h5>임꺽정</h5>
-          <p>UI / UX 디자이너</p>
+        <li data-item="cloud">
+          <img src="../images/gallery_04.jpg" alt="" />
+          <p>별을 책상을</p>
+        </li>
+        <li data-item="mountain">
+          <img src="../images/gallery_05.jpg" alt="" />
+          <p>별 멀리</p>
+        </li>
+        <li data-item="cloud">
+          <img src="../images/gallery_06.jpg" alt="" />
+          <p>추억과 노새</p>
+        </li>
+        <li data-item="sea">
+          <img src="../images/gallery_07.jpg" alt="" />
+          <p>이름과 릴케 남은</p>
+        </li>
+        <li data-item="cloud">
+          <img src="../images/gallery_08.jpg" alt="" />
+          <p>지나가는 책상</p>
+        </li>
+        <li data-item="wind">
+          <img src="../images/gallery_09.jpg" alt="" />
+          <p>별 멀리</p>
+        </li>
+        <li data-item="wind">
+          <img src="../images/gallery_10.jpg" alt="" />
+          <p>이네들은 별을</p>
+        </li>
+        <li data-item="sea">
+          <img src="../images/gallery_11.jpg" alt="" />
+          <p>말 밤을 벌써</p>
+        </li>
+        <li data-item="mountain">
+          <img src="../images/gallery_12.jpg" alt="" />
+          <p>오는 이제</p>
         </li>
       </ul>
 

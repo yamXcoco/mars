@@ -152,3 +152,74 @@ body {
 .section .title_box span i {
   padding-left: 10px;
 }
+
+.page {
+  margin-top: 140px;
+}
+.page h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* 여기에 menu */
+.menu {
+  color: #fff;
+  background-color: #1f212c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+}
+
+.menu > ul {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 175px;
+}
+
+.menu > ul > li {
+  width: 204px;
+}
+
+.menu > ul > li > a {
+  font-size: 26px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.menu > ul > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: -49px;
+  left: 0;
+  width: 12px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.menu ul ul {
+  color: #7e84a5;
+}
+
+.menu ul ul li a {
+  display: block;
+  padding: 18px 0;
+}
+
+.menu ul ul li a:hover {
+  text-decoration: underline;
+}
+
+.close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-size: 50px;
+}
