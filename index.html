@@ -22,13 +22,15 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- js -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/slide.js"></script>
+    <script src="./js/common.js"></script>
   </head>
   <body>
     <!-- 여기에 메뉴넣기 -->
@@ -100,11 +102,7 @@
           <li><a href="/pages/gallery.html">화성환경</a></li>
           <li><a href="/pages/paper.html">신청하기</a></li>
         </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <div class="hamburger"><i class="xi-bars"></i></div>
       </div>
 
       <!-- slide -->
@@ -314,12 +312,17 @@
             사업자등록번호 : XRE-58-HU-78425-000 <br />
             통신판매업신고 : 2020-화성-제2154호 <br />
             이메일 : spacetour@google.com <br />
-            주소 : 서울특별시 영등포구 분화구옆 큰길 574 ( 화성동 E8 - A172F00 )
+            주소 : 서울시 영등포구 분화구옆 큰길 574 ( 화성동 E8 - A172F00 )
             <br />
             고객센터 AM 10:00 ~ PM 05:00 / 주말, 공휴일 제외
           </p>
           <p class="copyright">© 2123 Mars:Project Inc. All Rights Reserved</p>
         </div>
+      </div>
+
+      <!-- gotop -->
+      <div class="gotop">
+        <i class="xi-arrow-up"></i>
       </div>
     </div>
     <!-- 지도 스크립트 -->
@@ -328,6 +331,7 @@
       class="daum_roughmap_loader_script"
       src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
     ></script>
+
     <script charset="UTF-8">
       new daum.roughmap.Lander({
         timestamp: '1674697202433',
@@ -336,5 +340,23 @@
         mapHeight: '450',
       }).render()
     </script>
+
+    <!-- <script>
+      $(window).scroll(function () {
+        // 윈도우창 스크롤 이벤트가 일어나면 펑션이 일어남
+        // this는 윈도우를 의미
+        if ($(this).scrollTop() > 800) {
+          $('.gotop').fadeIn()
+          // 만약 고탑의 스크롤 탑이 800보다 크면 gotop아이콘이 사라지게
+        } else {
+          $('.gotop').fadeOut()
+          // 만약 고탑의 스크롤 탑이 800보다 작으면 gotop아이콘이 나타나게
+        }
+      })
+
+      $('.gotop').click(function () {
+        $('html').animate({ scrollTop: 0 }, 300)
+      })
+    </script> -->
   </body>
 </html>

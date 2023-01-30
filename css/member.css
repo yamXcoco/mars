@@ -7,13 +7,19 @@
 } */
 /* member  */
 .member {
-  display: flex;
-  justify-content: space-between;
-  color: var(--dark);
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 30px;
 }
 .member h5 {
   font-size: 26px;
   margin: 30px 0 12px;
+}
+
+.member li img {
+  /* 여기확인 */
+  width: 100%;
+  display: block;
 }
 .movie {
   text-align: center;
